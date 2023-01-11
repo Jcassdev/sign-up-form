@@ -94,16 +94,16 @@ body {
     height:30vh;
     justify-content: right;
     align-items: left;
-    margin-bottom: 5vh;
+    margin-bottom: 3.4vw;
 
 }
 
 .signup-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width:135.5vh;
+    width:67vw;
     height:30vh;
-    grid-gap: 0vh;
+    grid-gap: 0vw;
     background-color: rgb(11, 29, 48);
     color: white;
     box-shadow: 1px 10px 10px black;
@@ -111,7 +111,7 @@ body {
 
 .form-row,
 .form-row2 {
-    padding: 20px;
+    padding: 1vw;
     display:flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -159,11 +159,11 @@ body {
 }
 */
 button {
-    font-size: 24px;
+    font-size: 2vh;
     font-weight: bold;
     background-color: rgb(30, 61, 107);
     color: azure;
-    padding: 24px 48px;
+    padding: 2vh 2.5vw;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -172,8 +172,8 @@ button {
 div .button {
     display: flex;
     justify-content: center;
-    margin-right: 13vw;
-    padding-top: 10vh;
+    margin-right: 12vw;
+    padding-top: 5vw;
 }
 
 button:hover {
@@ -190,7 +190,7 @@ button:active {
     align-items: center;
     width: 46.5vw;
     height: 10vh;
-    padding-top:6vh;
+    padding-top:3vw;
     margin-left: 26.7vw;
 }
 
