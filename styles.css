@@ -1,238 +1,451 @@
-body {
-    background-color: rgb(7, 20, 34);
-    margin: 0 0 0 0;
-}
+@media only screen and (max-width: 700px) {
 
-.background-image {
-    background-image: url(water.jpg);
-    background-size: contain;
-    background-attachment: fixed;
-    height:100vh;
-    width:35vw;
-    background-repeat: no-repeat;
-}
-.icon-container {
-    display: flex;
-    left: 0;
-    height: 35vh;
-    width: 35vw;
-    align-items: flex-end;
-}
+    body {
+        background-color: rgb(7, 20, 34);
+        margin: 0 0 0 0;
+    }
 
-.icon-box {
-    display: flex;
-    background-color: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
-    width: 35vw;
-    height: 20vh;
-}
-
-.header-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: top;
-    padding-left: 1.5vw;
-    height:10vh;
-    margin-left: 26vw;
-    margin-top: -80vh;
-    margin-bottom: 12vh;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    font-size: 3.5vh;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: azure;
-    margin-left: 13.9vw;
-}
-
-.paragraph {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-top: 1vw;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: azure;
-    font-size: 3vh;
-    margin-right: 26vw;
-}
-
-.words {
-    display: flex;
-    justify-content: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3vh;
-    color: azure;
-    padding-top: 0.8vw;
-    margin-right: 32.3vw;
-}
-
-.icon {
-    display: flex;
-    width:20%;
-    height:100%;
-    background-image: url(waterdrop.png);
-    background-repeat:no-repeat;
-    background-size: contain;
-    opacity: 65%;
-}
-
-.image-property {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    opacity: 30%;
-    font-size: 14px;
-    color: white;
-}
-
-.form-container {
-    display:flex;
-    height:30vh;
-    justify-content: right;
-    align-items: left;
-    margin-bottom: 3.4vw;
-
-}
-
-.signup-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width:65vw;
-    height:30vh;
-    grid-gap: 0vw;
-    background-color: rgb(11, 29, 48);
-    color: white;
-    box-shadow: 1px 10px 10px black;
-}
-
-.form-row,
-.form-row2 {
-    padding: 1vw;
-    display:flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap; 
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2vh; 
-}
-
-.form-row {
-    padding-right: 0;
-    padding-left: 6vw;
-    width: 30vw;
-    align-items: left;
-}
-
-.form-row2 {
-    padding-left: 0;
-    align-items: left;
-}
-
-.form-row input[type='text'],
-.form-row input[type='email'],
-.form-row input[type='password'],
-.form-row2 input[type='text'],
-.form-row2 input[type='email'],
-.form-row2 input[type='password'] {
-    background-color: azure;
-    border: none;
-    border-radius: 3px;
-    width: 20vw;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2vh;
-}
-focus: {
-    outline:0;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    outline:2px solid rgb(243, 128, 21);
-    box-shadow: 1px 3px 3px #e7ad60;
+    .icon-container {
+        display: flex;
+        height: 10vh;
+        width: 100vw;
+        margin-bottom: 1.3vh;
+    }
     
-}
-/*
-.form-row input[type='text']:invalid,
-.form-row input[type='email']:invalid,
-.form-row input[type='password']:invalid,
-.form-row2 input[type='text']:invalid,
-.form-row2 input[type='email']:invalid,
-.form-row2 input[type='password']:invalid {
-    border: 1px solid #D55C5F;
-    color: #D55C5F;
-    box-shadow: none;
-}
-*/
-button {
-    font-size: 2vh;
-    font-weight: bold;
-    background-color: rgb(30, 61, 107);
-    color: azure;
-    padding: 2vh 2.5vw;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+    .icon-box {
+        display: flex;
+        background-color: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        border: 1px solid black;
+        box-shadow: 1px 5px 5px black   ;
+    }
+
+    .icon {
+        display: flex;
+        width:10vw;
+        height:10vh;
+        background-image: url(waterdrop.png);
+        background-repeat:no-repeat;
+        background-size: contain;
+        opacity: 65%;
+    }
+    
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(27, 79, 136);
+        border: 1px solid rgb(9, 40, 82);
+        border-radius: 3px;
+        padding-top: 1vh;
+        box-shadow: 1px 5px 5px black;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    
+        font-size: 3vh;
+        font-family: 'Courier New', Courier, monospace;
+        color: azure;
+        height:10vh;
+        max-width: 400px;
+        padding: 0 2vw;
+        
+    }
+    
+    .paragraph {
+        display: flex;
+        justify-content: center;
+        padding-top: 1vw;
+        max-width: 400px;
+        font-family: 'Courier New', Courier, monospace;
+        color: azure;
+        font-size: 2.8vh;
+    }
+    
+    .words {
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2.8vh;
+        color: azure;
+        padding-top: 0.8vw;
+        padding-bottom: 1vh;
+        max-width: 400px;
+    }
+    
+    .image-property {
+        visibility: hidden;
+        clear: both;
+        display: none;
+    }
+    
+    .form-container {
+        display:flex;
+        height:40vh;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 1vh;
+
+    }
+    
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width:100vw;
+        height:38vh;
+        background-color: rgb(11, 29, 48);
+        color: white;
+        border-radius: 3px;
+        box-shadow: 1px 10px 10px black;
+        padding-top: 1vh;
+
+    }
+    
+    .form-row,
+    .form-row2 {
+        padding: 0.8vw;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2vh; 
+        width: 90vw;
+        max-width: 400px;
+    }
+
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .form-row input[type='password'],
+    .form-row2 input[type='text'],
+    .form-row2 input[type='email'],
+    .form-row2 input[type='password'] {
+        background-color: azure;
+        border: none;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2vh;
+    }
+    
+    button {
+        font-size: 2vh;
+        font-weight: bold;
+        background-color: rgb(30, 61, 107);
+        color: azure;
+        padding: 2vh 2.5vw;
+        border: none;
+        border-radius: 3px;
+        width: 90vw;
+        max-width: 400px;
+    }
+    
+    div .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 5vh;
+        padding-top: 5vw;
+        width: 100vw;
+    }
+    
+    button:active {
+        background-color: #407FC7;
+    }
+    
+    .signin-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13vh;
+        width: 100vw;
+        height: 10vh;
+    }
+    
+    .signin {
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: azure;
+        font-size: 2vh;
+    }
+    
+    a {
+        font-size: 2vh;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    a:link {
+        color:rgb(87, 132, 201);
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: rgb(87, 132, 201);
+        text-decoration: none;
+    }
+    
+    a:active {
+        color: #407FC7;
+        text-decoration: underline;
+    }
 }
 
-div .button {
-    display: flex;
-    justify-content: center;
-    margin-right: 12vw;
-    padding-top: 5vw;
-}
+@media only screen and (min-width: 700px) {
+    body {
+        background-color: rgb(7, 20, 34);
+        margin: 0 0 0 0;
+    }
+    
+    .image-container {
+        display: flex;
+        height: 100vh;
+        margin:0px;
+        padding: 0px;
+    }
+    
+    .background-image {
+        background-image: url(water.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        width:35vw;
+    }
+    .icon-container {
+        display: flex;
+        left: 0;
+        height: 33vh;
+        width: 35vw;
+        align-items: flex-end;
+    }
+    
+    .icon-box {
+        display: flex;
+        background-color: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+        width: 35vw;
+        height: 15vh;
+    }
+    
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: top;
+        padding-left: 1.5vw;
+        height:10vh;
+        margin-left: 26vw;
+        margin-top: -80vh;
+        margin-bottom: 12vh;
+    }
+    
+    .header {
+        display: flex;
+        align-items: center;
+        font-size: 3.5vh;
+        font-family: 'Courier New', Courier, monospace;
+        color: azure;
+        margin-left: 13.9vw;
+    }
+    
+    .paragraph {
+        display: flex;
+        align-items: center;
+        padding-top: 1vw;
+        font-family: 'Courier New', Courier, monospace;
+        color: azure;
+        font-size: 3vh;
+        margin-left: 13.9vw;
+    }
+    
+    .words {
+        display: flex;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 3vh;
+        color: azure;
+        padding-top: 0.8vw;
+        margin-left: 13.9vw;
+    }
+    
+    .icon {
+        display: flex;
+        width:20%;
+        height:100%;
+        background-image: url(waterdrop.png);
+        background-repeat:no-repeat;
+        background-size: contain;
+        opacity: 65%;
+    }
+    
+    .image-property {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        opacity: 30%;
+        font-size: 14px;
+        color: white;
+    }
+    
+    .form-container {
+        display:flex;
+        height:30vh;
+        justify-content: right;
+        align-items: left;
+        margin-bottom: 3.4vw;
+    
+    }
+    
+    .signup-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width:65vw;
+        height:30vh;
+        grid-gap: 0vw;
+        background-color: rgb(11, 29, 48);
+        color: white;
+        box-shadow: 1px 10px 10px black;
+    }
+    
+    .form-row,
+    .form-row2 {
+        padding: 1vw;
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2vh; 
+    }
+    
+    .form-row {
+        padding-right: 0;
+        padding-left: 6vw;
+        width: 30vw;
+        align-items: left;
+    }
+    
+    .form-row2 {
+        padding-left: 0;
+        align-items: left;
+    }
+    
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .form-row input[type='password'],
+    .form-row2 input[type='text'],
+    .form-row2 input[type='email'],
+    .form-row2 input[type='password'] {
+        background-color: azure;
+        border: none;
+        border-radius: 3px;
+        width: 20vw;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2vh;
+    }
+    
 
-button:hover {
-    background-color: rgb(78, 107, 170);
-}
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+        outline:2px solid rgb(238, 150, 35);
+        box-shadow: 1px 3px 3px #f5b265;
+        
+    }
+    
+    button {
+        font-size: 2vh;
+        font-weight: bold;
+        background-color: rgb(30, 61, 107);
+        color: azure;
+        padding: 2vh 2.5vw;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3vw;
+        margin-left: 6vw;
+        width: 20vw;
+        height: 10vh;
+        
+    }
+    
+    button:hover {
+        background-color: rgb(78, 107, 170);
+    }
+    
+    button:active {
+        background-color: #407FC7;
+    }
+    
+    .signin-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45vw;
+        height: 5vh;
+        padding-top:3vw;
+        margin-left: 38.5vw;
+        min-width: 382px;
+        
+    }
+    
+    .signin {
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Courier New', Courier, monospace;
+        color: azure;
+        font-size: 2vh;
+        width: 40vw;
+        min-width: 343px;
+        
+    }
+    
+    p {
+        display: flex;
+        width: 40vw;
+        min-width: 273;
+    }
 
-button:active {
-    background-color: #407FC7;
-}
-
-.signin-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 46.5vw;
-    height: 10vh;
-    padding-top:3vw;
-    margin-left: 30vw;
-}
-
-.signin {
-    display: flex;
-    justify-content: flex-end;
-    font-family: 'Courier New', Courier, monospace;
-    color: azure;
-    font-size: 2vh;
-}
-
-a {
-    font-size: 2vh;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-a:link {
-    color:rgb(87, 132, 201);
-    text-decoration: none;
-}
-
-a:visited {
-    color: rgb(87, 132, 201);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(78, 107, 170);
-    text-decoration: underline;
-}
-
-a:active {
-    color: #407FC7;
-    text-decoration: underline;
+    a {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 2vh;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        min-width: 64.5px;
+    }
+    
+    a:link {
+        color:rgb(87, 132, 201);
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: rgb(87, 132, 201);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: rgb(78, 107, 170);
+        text-decoration: underline;
+    }
+    
+    a:active {
+        color: #407FC7;
+        text-decoration: underline;
+    }
 }
